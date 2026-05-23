@@ -123,16 +123,7 @@ body{background:var(--bg);font-family:'EB Garamond',serif;color:var(--cream);min
   <div class="day-quote" id="dayQuote"></div>
 </div>
 
-<div style="padding:0 0 0.25rem">
-  <div class="pani-puri">
-    <div style="font-size:1.8rem;flex-shrink:0">🫙</div>
-    <div class="pp-text">
-      <h3>Pani Puri Counter</h3>
-      <p>Live service — visit the counter anytime throughout your meal!</p>
-      <div class="pp-live"><div class="live-dot"></div> Live during your visit</div>
-    </div>
-  </div>
-</div>
+<div id="paniPuriBanner" style="padding:0 0 0.25rem"></div>
 
 <div id="menuContent" class="menu"></div>
 
@@ -249,6 +240,13 @@ function render(idx) {
   const adultPrice = d.weekend ? "$31.99" : "$29.99";
   const kidPrice = d.weekend ? "$15.99" : "$14.99";
 
+  // Show pani puri banner only on weekdays
+  const ppBanner = document.getElementById('paniPuriBanner');
+  if (!d.weekend) {
+    ppBanner.innerHTML = `<div class="pani-puri"><div style="font-size:1.8rem;flex-shrink:0">🫙</div><div class="pp-text"><h3>Pani Puri Counter</h3><p>Live service — visit the counter anytime throughout your meal!</p><div class="pp-live"><div class="live-dot"></div> Live during your visit</div></div></div>`;
+  } else {
+    ppBanner.innerHTML = '';
+  }
   document.getElementById('dayTitle').textContent = `${dayName}'s Menu`;
   document.getElementById('dayQuote').textContent = d.quote;
 
@@ -345,4 +343,3 @@ render(todayIdx);
 </script>
 </body>
 </html>
-
