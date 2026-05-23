@@ -25,6 +25,8 @@
   --green2:#2D5A2D;
 }
 body{background:var(--bg);font-family:'EB Garamond',serif;color:var(--cream);min-height:100vh;overflow-x:hidden}
+
+/* HEADER */
 .header{background:var(--bg2);padding:2.5rem 1.5rem 1.8rem;text-align:center;position:relative}
 .header::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--saffron),var(--gold-light),var(--saffron),transparent)}
 .header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border2),transparent)}
@@ -34,26 +36,38 @@ body{background:var(--bg);font-family:'EB Garamond',serif;color:var(--cream);min
 .logo-divider::before,.logo-divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--border2),transparent)}
 .logo-divider span{color:var(--saffron);font-size:0.85rem;opacity:0.7}
 .logo-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--cream-dim);letter-spacing:0.25em}
+
+/* DAY HEADER */
 .day-banner{padding:1.4rem 1.5rem 1rem;text-align:center;border-bottom:1px solid var(--border)}
 .day-title{font-family:'Pinyon Script',cursive;font-size:2.8rem;color:var(--saffron-light);line-height:1.1}
 .day-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.92rem;color:var(--muted);margin-top:0.3rem;letter-spacing:0.08em}
+
+/* PANI PURI BANNER */
 .pani-puri{background:linear-gradient(135deg,var(--green-bg),var(--green2));margin:1rem 1rem 0;border-radius:10px;padding:0.9rem 1.1rem;display:flex;align-items:center;gap:0.75rem;border:1px solid rgba(110,200,110,0.15)}
 .pp-text h3{font-family:'Cinzel',serif;font-size:0.78rem;letter-spacing:0.12em;color:#B8E6B8;margin-bottom:0.18rem}
 .pp-text p{font-family:'EB Garamond',serif;font-size:0.9rem;font-style:italic;color:rgba(255,255,255,0.72);line-height:1.35}
 .pp-live{display:inline-flex;align-items:center;gap:4px;background:rgba(255,255,255,0.08);padding:2px 8px;border-radius:20px;font-size:0.62rem;color:#B8E6B8;font-family:'Cinzel',serif;margin-top:0.3rem;letter-spacing:0.05em}
 .live-dot{width:6px;height:6px;border-radius:50%;background:#6EE86E;animation:pulse 1.5s infinite;flex-shrink:0}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.75)}}
+
+/* MENU BODY */
 .menu{padding:1rem 1rem 0.5rem}
+
+/* DISH OF THE DAY */
 .dotd{background:linear-gradient(135deg,var(--bg3),var(--card));border-radius:12px;padding:1.1rem 1.3rem;margin-bottom:1.1rem;position:relative;overflow:hidden;border:1px solid var(--border)}
 .dotd::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--saffron),var(--gold-light),var(--saffron))}
 .dotd-label{font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.25em;color:var(--saffron);margin-bottom:0.35rem;opacity:0.9}
 .dotd-name{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--saffron-light);line-height:1.1}
 .dotd-desc{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:rgba(251,245,232,0.45);margin-top:0.2rem}
+
+/* SECTIONS */
 .section{margin-bottom:1.1rem}
 .sec-hdr{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.65rem}
 .sec-dot{width:4px;height:4px;border-radius:50%;background:var(--saffron);flex-shrink:0}
 .sec-lbl{font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.18em;color:var(--border2);text-transform:uppercase;white-space:nowrap}
 .sec-line{flex:1;height:1px;background:var(--border)}
+
+/* VERTICAL ITEM LIST */
 .item-list{display:flex;flex-direction:column;gap:0.45rem}
 .item{background:var(--card);border-radius:8px;padding:0.7rem 1rem;border:1px solid var(--border);display:flex;align-items:center;gap:0.75rem;position:relative;overflow:hidden}
 .item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--saffron)}
@@ -63,16 +77,24 @@ body{background:var(--bg);font-family:'EB Garamond',serif;color:var(--cream);min
 .item-icon{font-size:1rem;flex-shrink:0;opacity:0.6}
 .item-name{font-family:'EB Garamond',serif;font-size:1.05rem;font-weight:500;color:var(--cream);line-height:1.2}
 .item-tag{font-family:'Cinzel',serif;font-size:0.44rem;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase;margin-bottom:0.1rem}
+
+/* AAMRAS */
 .item.aamras{background:linear-gradient(135deg,#2A1E08,#3A2810);border-color:var(--gold)}
 .item.aamras::before{background:var(--gold)}
 .aamras-tag{font-family:'Cinzel',serif;font-size:0.44rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:0.1rem}
+
+/* ALWAYS INCLUDED */
 .included{background:var(--bg3);border-radius:10px;padding:0.9rem 1rem;border:1px solid var(--border);margin-bottom:1.1rem}
 .incl-lbl{font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.15em;color:var(--gold);text-transform:uppercase;margin-bottom:0.55rem;opacity:0.85}
 .chips{display:flex;flex-wrap:wrap;gap:0.35rem}
 .chip{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:0.22rem 0.7rem;font-family:'EB Garamond',serif;font-size:0.88rem;color:var(--cream-dim)}
+
+/* WEEKEND */
 .weekend-block{background:linear-gradient(135deg,#2A1E08,#3A280A);border:1px solid var(--gold);border-radius:10px;padding:0.9rem 1rem;margin-bottom:1.1rem;display:flex;align-items:center;gap:0.75rem}
 .wk-tag{font-family:'Cinzel',serif;font-size:0.52rem;letter-spacing:0.15em;color:var(--gold);margin-bottom:0.18rem}
 .wk-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--saffron-light)}
+
+/* PRICING */
 .pricing{background:var(--bg3);border-radius:10px;padding:0.9rem 1rem;border:1px solid var(--border);margin-bottom:1.1rem}
 .pr-lbl{font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.15em;color:var(--border2);text-transform:uppercase;margin-bottom:0.6rem}
 .pr-row{display:flex;justify-content:space-between;align-items:baseline;padding:0.32rem 0;border-bottom:1px solid var(--border)}
@@ -80,22 +102,27 @@ body{background:var(--bg);font-family:'EB Garamond',serif;color:var(--cream);min
 .pr-item{font-family:'EB Garamond',serif;font-size:0.95rem;color:var(--cream-dim)}
 .pr-price{font-family:'Cinzel',serif;font-size:0.82rem;font-weight:600;color:var(--saffron-light)}
 .pr-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.8rem;color:var(--muted);margin-top:0.6rem;line-height:1.5;padding-top:0.5rem;border-top:1px solid var(--border)}
+
+/* ALLERGEN + FOOTER */
 .allergen{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.8rem;color:var(--muted);text-align:center;margin-bottom:0.75rem;padding:0 0.5rem;line-height:1.5}
 .footer{text-align:center;padding:1rem 1rem 2rem;border-top:1px solid var(--border)}
 .footer-logo{font-family:'Pinyon Script',cursive;font-size:1.8rem;color:var(--saffron-light);opacity:0.5}
 </style>
 </head>
 <body>
+
 <div class="header">
   <div class="logo">Maharaja Bhog</div>
   <div class="logo-devanagari">महाराजा भोग — Pure Vegetarian Thali</div>
   <div class="logo-divider"><span>✦</span></div>
   <div class="logo-sub">Mississauga, Ontario</div>
 </div>
+
 <div class="day-banner">
   <div class="day-title" id="dayTitle"></div>
   <div class="day-quote" id="dayQuote"></div>
 </div>
+
 <div style="padding:0 0 0.25rem">
   <div class="pani-puri">
     <div style="font-size:1.8rem;flex-shrink:0">🫙</div>
@@ -106,8 +133,26 @@ body{background:var(--bg);font-family:'EB Garamond',serif;color:var(--cream);min
     </div>
   </div>
 </div>
+
 <div id="menuContent" class="menu"></div>
+
 <script>
+// ─────────────────────────────────────────────────────────────────────────────
+// UPDATE DAILY — change only this block each morning:
+//   dishOfDay  : name + desc
+//   farsan     : 2 items
+//   sabzi      : 4 items
+//   bread      : 2 items
+//   rice       : 2–3 items
+//   halwa      : type of halwa today
+//
+// FIXED (never touch):
+//   dal        : Rajasthani Dal, Gujrati Dal, Rajasthani Kadhi
+//   dessert    : Aamras (summer) + halwa
+//   included   : Masala Chaas, Papad Churi, Chutney, Salad, Pickles
+//   weekend    : set true on Sat & Sun only
+// ─────────────────────────────────────────────────────────────────────────────
+
 const menu = {
   0: {
     quote:"A fresh start, a warm thali",
@@ -161,12 +206,12 @@ const menu = {
   },
   5: {
     quote:"A royal weekend begins",
-    dishOfDay:{ name:"Palak Chaat", desc:"Crispy spinach leaves topped with yogurt, chutneys & chaat masala" },
-    farsan:["Paneer Sandwich Tikki","Patra"],
-    sabzi:["Kadai Paneer","Aloo Patel Bhaji","Mix Veg Handi","Rajasthani Gatta"],
-    bread:["Fulka Roti","Masala Poori"],
-    rice:["Steam Rice","Khichdi","Veg Biryani"],
-    halwa:"Moong Dal Halwa",
+    dishOfDay:{ name:"Dahi Vada", desc:"Soft lentil dumplings in cool yogurt with sweet & tangy chutneys" },
+    farsan:["Spring Roll","Bajar Kichu"],
+    sabzi:["Paneer Angara","Flower Capsicum Tomato","Chole Muttari","Aloo Achari"],
+    bread:["Puri","Fulka Roti","Sindhi Pori"],
+    rice:["Moong Daal Khichdi","Palak Pulav","Steam Rice"],
+    halwa:"Walnut Halwa",
     weekend:true
   },
   6: {
@@ -180,46 +225,124 @@ const menu = {
     weekend:true
   }
 };
+
 const DAL = ["Rajasthani Dal","Gujrati Dal","Rajasthani Kadhi"];
 const DAYS = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
 function secHdr(label) {
   return `<div class="sec-hdr"><div class="sec-dot"></div><span class="sec-lbl">${label}</span><div class="sec-line"></div></div>`;
 }
+
 function items(arr, cls, icon) {
-  return arr.map(s => `<div class="item ${cls}"><span class="item-icon">${icon}</span><div class="item-name">${s}</div></div>`).join('');
+  return arr.map(s => `
+    <div class="item ${cls}">
+      <span class="item-icon">${icon}</span>
+      <div class="item-name">${s}</div>
+    </div>`).join('');
 }
+
 function render(idx) {
   const d = menu[idx];
   const dayName = DAYS[idx];
-  const adultPrice = d.weekend ? "$31.99" : "$31.99";
+
+  // Weekend pricing
+  const adultPrice = d.weekend ? "$31.99" : "$29.99";
   const kidPrice = d.weekend ? "$15.99" : "$14.99";
+
   document.getElementById('dayTitle').textContent = `${dayName}'s Menu`;
   document.getElementById('dayQuote').textContent = d.quote;
+
   document.getElementById('menuContent').innerHTML = `
+
     <div class="dotd">
       <div class="dotd-label">✦ DISH OF THE DAY ✦</div>
       <div class="dotd-name">${d.dishOfDay.name}</div>
       <div class="dotd-desc">${d.dishOfDay.desc}</div>
     </div>
-    <div class="section">${secHdr('Appetizer / Farsan')}<div class="item-list">${items(d.farsan,'','🌿')}</div></div>
-    <div class="section">${secHdr('Main Course / Sabzi')}<div class="item-list">${items(d.sabzi,'bur','🍛')}</div></div>
-    <div class="section">${secHdr('Dal & Kadhi')}<div class="item-list">${DAL.map(s=>`<div class="item gld dim"><span class="item-icon">🫕</span><div><div class="item-tag">Daily</div><div class="item-name">${s}</div></div></div>`).join('')}</div></div>
-    <div class="section">${secHdr('Indian Breads')}<div class="item-list">${items(d.bread,'','🫓')}</div></div>
-    <div class="section">${secHdr('Rice')}<div class="item-list">${items(d.rice,'bur','🍚')}</div></div>
-    <div class="section">${secHdr('Dessert')}<div class="item-list">
-      <div class="item aamras"><span class="item-icon">🥭</span><div><div class="aamras-tag">✦ Summer Special</div><div class="item-name">Aamras</div></div></div>
-      <div class="item gld"><span class="item-icon">🍮</span><div><div class="item-tag">Daily Halwa</div><div class="item-name">${d.halwa}</div></div></div>
-    </div></div>
-    <div class="included"><div class="incl-lbl">Always included with every thali</div><div class="chips"><span class="chip">Masala Chaas</span><span class="chip">Papad Churi</span><span class="chip">Chutney</span><span class="chip">Salad</span><span class="chip">Pickles</span></div></div>
-    ${d.weekend ? `<div class="weekend-block"><div style="font-size:1.8rem;flex-shrink:0">🍬</div><div><div class="wk-tag">✦ WEEKEND SPECIAL ✦</div><div class="wk-name">Jalebi — freshly made</div></div></div>` : ''}
-    <div class="pricing"><div class="pr-lbl">Pricing (Plus Tax)</div><div class="pr-row"><span class="pr-item">Adult Thali</span><span class="pr-price">${adultPrice}</span></div><div class="pr-row"><span class="pr-item">Kids Thali (5–10 yrs)</span><span class="pr-price">${kidPrice}</span></div><div class="pr-note">✦ An 18% gratuity is automatically added for parties of 6 or more.</div></div>
+
+    <div class="section">
+      ${secHdr('Appetizer / Farsan')}
+      <div class="item-list">${items(d.farsan,'','🌿')}</div>
+    </div>
+
+    <div class="section">
+      ${secHdr('Main Course / Sabzi')}
+      <div class="item-list">${items(d.sabzi,'bur','🍛')}</div>
+    </div>
+
+    <div class="section">
+      ${secHdr('Dal & Kadhi')}
+      <div class="item-list">${DAL.map(s=>`
+        <div class="item gld dim">
+          <span class="item-icon">🫕</span>
+          <div><div class="item-tag">Daily</div><div class="item-name">${s}</div></div>
+        </div>`).join('')}
+      </div>
+    </div>
+
+    <div class="section">
+      ${secHdr('Indian Breads')}
+      <div class="item-list">${items(d.bread,'','🫓')}</div>
+    </div>
+
+    <div class="section">
+      ${secHdr('Rice')}
+      <div class="item-list">${items(d.rice,'bur','🍚')}</div>
+    </div>
+
+    <div class="section">
+      ${secHdr('Dessert')}
+      <div class="item-list">
+        <div class="item aamras">
+          <span class="item-icon">🥭</span>
+          <div><div class="aamras-tag">✦ Summer Special</div><div class="item-name">Aamras</div></div>
+        </div>
+        <div class="item gld">
+          <span class="item-icon">🍮</span>
+          <div><div class="item-tag">Daily Halwa</div><div class="item-name">${d.halwa}</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="included">
+      <div class="incl-lbl">Always included with every thali</div>
+      <div class="chips">
+        <span class="chip">Masala Chaas</span>
+        <span class="chip">Papad Churi</span>
+        <span class="chip">Chutney</span>
+        <span class="chip">Salad</span>
+        <span class="chip">Pickles</span>
+      </div>
+    </div>
+
+    ${d.weekend ? `
+    <div class="weekend-block">
+      <div style="font-size:1.8rem;flex-shrink:0">🍬</div>
+      <div>
+        <div class="wk-tag">✦ WEEKEND SPECIAL ✦</div>
+        <div class="wk-name">Kesori Jalebi & Mango Jalebi</div>
+      </div>
+    </div>` : ''}
+
+    <div class="pricing">
+      <div class="pr-lbl">Pricing (Plus Tax)</div>
+      <div class="pr-row"><span class="pr-item">Adult Thali</span><span class="pr-price">${adultPrice}</span></div>
+      <div class="pr-row"><span class="pr-item">Kids Thali (5–10 yrs)</span><span class="pr-price">${kidPrice}</span></div>
+      <div class="pr-note">✦ An 18% gratuity is automatically added for parties of 6 or more.</div>
+    </div>
+
     <div class="allergen">* Our food contains wheat, nuts and dairy products.<br>Any allergic reaction will be the responsibility of the diner.</div>
-    <div class="footer"><div class="footer-logo">Maharaja Bhog</div></div>
+
+    <div class="footer">
+      <div class="footer-logo">Maharaja Bhog</div>
+    </div>
   `;
 }
+
 const jsDay = new Date().getDay();
 const todayIdx = jsDay === 0 ? 6 : jsDay - 1;
 render(todayIdx);
 </script>
 </body>
 </html>
+
